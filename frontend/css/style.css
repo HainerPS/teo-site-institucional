@@ -57,6 +57,7 @@
     border-bottom: 2px solid #ff006e;
   }
   
+  /* HERO */
   .hero {
     min-height: 78vh;
     padding: 170px 6% 90px;
@@ -101,6 +102,7 @@
     margin-bottom: 34px;
   }
   
+  /* BOTÕES */
   .btn-primary,
   .btn-secondary {
     display: inline-block;
@@ -130,6 +132,7 @@
     color: #fff;
   }
   
+  /* SOMOS */
   .somos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -153,6 +156,7 @@
     object-fit: cover;
   }
   
+  /* SERVIÇOS */
   .services {
     padding: 70px 14% 90px;
     background: #fff;
@@ -202,132 +206,7 @@
     line-height: 1.55;
   }
   
-  .projects-preview {
-    padding: 90px 14%;
-    background: #111;
-    color: #fff;
-  }
-  
-  .projects-preview .section-header h2 {
-    color: #fff;
-  }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-    margin-bottom: 42px;
-  }
-  
-  .project-card {
-    background: #fff;
-    color: #111;
-    overflow: hidden;
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: 260px;
-    display: block;
-    object-fit: cover;
-  }
-  
-  .project-card div {
-    padding: 22px;
-  }
-  
-  .project-card span {
-    display: block;
-    color: #ff006e;
-    font-size: 12px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-  }
-  
-  .project-card h3 {
-    font-size: 24px;
-  }
-  
-  @media (max-width: 900px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .project-card img {
-      height: 300px;
-    }
-  }
-  
-  .cta {
-    padding: 90px 14%;
-    background: #ff006e;
-    color: #fff;
-  }
-  
-  .cta h2 {
-    font-size: 40px;
-    max-width: 700px;
-    margin-bottom: 28px;
-  }
-  
-  .cta .btn-primary {
-    background: #111;
-  }
-  
-  .footer {
-    padding: 26px 8%;
-    background: #050505;
-    color: #fff;
-    text-align: center;
-  }
-  
-  /* Responsivo */
-  @media (max-width: 900px) {
-    .header {
-      position: relative;
-      background: #fff;
-      flex-direction: column;
-      gap: 24px;
-    }
-  
-    .menu {
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-  
-    .hero {
-      padding-top: 90px;
-      min-height: 70vh;
-    }
-  
-    .hero h2 {
-      font-size: 40px;
-    }
-  
-    .somos-grid,
-    .services-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .services,
-    .projects-preview,
-    .cta {
-      padding: 70px 8%;
-    }
-  
-    .section-header h2,
-    .cta h2 {
-      font-size: 32px;
-    }
-  
-    .service-card {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-
+  /* SERVIÇOS EXTRAS */
   .services-extra {
     padding: 80px 14%;
     background: #f5f5f5;
@@ -365,10 +244,164 @@
     line-height: 1.8;
   }
   
-  /* Responsivo */
+  /* PROJETOS */
+  .projects-preview {
+    padding: 90px 14%;
+    background: #111;
+    color: #fff;
+  }
+  
+  .projects-preview .section-header h2 {
+    color: #fff;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .project-card {
+    background: #fff;
+    color: #111;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: contain;
+    background: #d7d7d7;
+    padding: 12px;
+  }
+  
+  .project-card div {
+    padding: 22px;
+  }
+  
+  .project-card span {
+    display: block;
+    color: #ff006e;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  
+  .project-card h3 {
+    font-size: 26px;
+    font-weight: 900;
+  }
+  
+  /* CTA */
+  .cta {
+    padding: 90px 14%;
+    background: #ff006e;
+    color: #fff;
+  }
+  
+  .cta h2 {
+    font-size: 40px;
+    max-width: 700px;
+    margin-bottom: 28px;
+  }
+  
+  .cta .btn-primary {
+    background: #111;
+  }
+  
+  /* FOOTER */
+  .footer {
+    padding: 26px 8%;
+    background: #050505;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 1100px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .project-card img {
+      height: 260px;
+    }
+  }
+  
   @media (max-width: 900px) {
-    .services-extra-grid {
+    .header {
+      position: relative;
+      background: #fff;
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .menu {
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+  
+    .hero {
+      padding-top: 90px;
+      min-height: 70vh;
+    }
+  
+    .hero h2 {
+      font-size: 40px;
+    }
+  
+    .somos-grid,
+    .services-grid,
+    .services-extra-grid,
+    .projects-grid {
       grid-template-columns: 1fr;
-      gap: 40px;
+    }
+  
+    .services,
+    .services-extra,
+    .projects-preview,
+    .cta {
+      padding: 70px 8%;
+    }
+  
+    .section-header h2,
+    .cta h2 {
+      font-size: 32px;
+    }
+  
+    .service-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .project-card img {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .brand h1 {
+      font-size: 38px;
+    }
+  
+    .hero h2 {
+      font-size: 34px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .project-card img {
+      height: 240px;
     }
   }
