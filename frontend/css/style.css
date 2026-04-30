@@ -405,3 +405,113 @@
       height: 240px;
     }
   }
+
+  /* HEADER DA PÁGINA (fixa diferente da home) */
+.page-header {
+    position: relative;
+    background: #fff;
+  }
+  
+  /* HERO DA PÁGINA */
+  .page-hero {
+    padding: 120px 14% 80px;
+    background: #f5f5f5;
+  }
+  
+  .page-hero h2 {
+    font-size: 42px;
+    max-width: 700px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .page-hero p {
+    max-width: 500px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* BLOCO DE CADA PROJETO */
+  .project-detail {
+    padding: 90px 14%;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* TÍTULO DO PROJETO */
+  .project-title {
+    margin-bottom: 40px;
+  }
+  
+  .project-title span {
+    display: block;
+    color: #ff006e;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .project-title h2 {
+    font-size: 34px;
+  }
+  
+  /* GALERIA */
+  .project-gallery {
+    display: grid;
+    gap: 20px;
+  }
+  
+  /* VARIAÇÕES DE GRID */
+  .two-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .three-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* IMAGENS */
+  .project-gallery img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    background: #e5e5e5;
+    transition: 0.4s;
+  }
+  
+  /* HOVER SUAVE */
+  .project-gallery img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 1100px) {
+    .two-columns,
+    .three-columns {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .page-hero {
+      padding: 80px 8%;
+    }
+  
+    .project-detail {
+      padding: 70px 8%;
+    }
+  
+    .two-columns,
+    .three-columns {
+      grid-template-columns: 1fr;
+    }
+  
+    .page-hero h2 {
+      font-size: 32px;
+    }
+  
+    .project-title h2 {
+      font-size: 26px;
+    }
+  }
