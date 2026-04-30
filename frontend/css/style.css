@@ -1,45 +1,281 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  header {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #111;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 28px 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: #000;
-    color: #fff;
+    align-items: flex-start;
   }
   
-  nav a {
-    color: white;
-    margin-left: 15px;
+  .brand h1 {
+    color: #ff006e;
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+  
+  .brand span {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 34px;
+  }
+  
+  .menu a {
+    color: #111;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 8px;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    color: #ff006e;
+    border-bottom: 2px solid #ff006e;
   }
   
   .hero {
-    padding: 100px 20px;
-    text-align: center;
-    background: #f5f5f5;
+    min-height: 78vh;
+    padding: 170px 6% 90px;
+  
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+      url("../assets/imagens/capa-cachorro.png");
+  
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 580px;
+  }
+  
+  .section-tag {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #ff006e;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
   }
   
   .hero h2 {
-    font-size: 40px;
+    font-size: 54px;
+    line-height: 1.08;
+    font-weight: 900;
+    margin-bottom: 24px;
   }
   
-  section {
-    padding: 60px 20px;
-    text-align: center;
+  .hero p {
+    max-width: 480px;
+    font-size: 18px;
+    line-height: 1.55;
+    margin-bottom: 34px;
   }
   
-  .card {
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
+  .btn-primary,
+  .btn-secondary {
     display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 15px 28px;
+    transition: 0.3s;
+  }
+  
+  .btn-primary {
+    background: #ff006e;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background: #d9005d;
+  }
+  
+  .btn-secondary {
+    border: 2px solid #ff006e;
+    color: #ff006e;
+  }
+  
+  .btn-secondary:hover {
+    background: #ff006e;
+    color: #fff;
+  }
+  
+  .somos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #d9d9d9;
+  }
+  
+  .somos-card {
+    min-height: 250px;
+    border-right: 1px solid #fff;
+    overflow: hidden;
+  }
+  
+  .somos-card:last-child {
+    border-right: none;
+  }
+  
+  .somos-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .services {
+    padding: 70px 14% 90px;
+    background: #fff;
+  }
+  
+  .section-header {
+    max-width: 760px;
+    margin-bottom: 42px;
+  }
+  
+  .section-header h2 {
+    font-size: 38px;
+    line-height: 1.18;
+    font-weight: 900;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .service-card {
+    min-height: 150px;
+    padding: 28px 30px;
+    background: #f3f3f3;
+    border-top: 4px solid #ff006e;
+  
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .service-icon {
+    color: #ff006e;
+    flex-shrink: 0;
+  }
+  
+  .service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .service-card p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  
+  .projects-preview {
+    padding: 90px 14%;
+    background: #111;
+    color: #fff;
+  }
+  
+  .projects-preview .section-header h2 {
+    color: #fff;
   }
   
   .cta {
-    background: black;
-    color: white;
+    padding: 90px 14%;
+    background: #ff006e;
+    color: #fff;
+  }
+  
+  .cta h2 {
+    font-size: 40px;
+    max-width: 700px;
+    margin-bottom: 28px;
+  }
+  
+  .cta .btn-primary {
+    background: #111;
+  }
+  
+  .footer {
+    padding: 26px 8%;
+    background: #050505;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 900px) {
+    .header {
+      position: relative;
+      background: #fff;
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .menu {
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+  
+    .hero {
+      padding-top: 90px;
+      min-height: 70vh;
+    }
+  
+    .hero h2 {
+      font-size: 40px;
+    }
+  
+    .somos-grid,
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .services,
+    .projects-preview,
+    .cta {
+      padding: 70px 8%;
+    }
+  
+    .section-header h2,
+    .cta h2 {
+      font-size: 32px;
+    }
+  
+    .service-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
