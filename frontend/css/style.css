@@ -211,6 +211,54 @@
   .projects-preview .section-header h2 {
     color: #fff;
   }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 42px;
+  }
+  
+  .project-card {
+    background: #fff;
+    color: #111;
+    overflow: hidden;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 260px;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .project-card div {
+    padding: 22px;
+  }
+  
+  .project-card span {
+    display: block;
+    color: #ff006e;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+  }
+  
+  @media (max-width: 900px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-card img {
+      height: 300px;
+    }
+  }
   
   .cta {
     padding: 90px 14%;
