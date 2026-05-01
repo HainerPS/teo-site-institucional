@@ -32,6 +32,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .brand {
+    margin-right: 60px;
+  }
   
   .brand h1 {
     color: #ff006e;
@@ -50,7 +54,8 @@
   
   .menu {
     display: flex;
-    gap: 34px;
+    gap: 30px;
+    margin-left: auto;
   }
   
   .menu a {
