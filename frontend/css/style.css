@@ -26,6 +26,12 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   .brand h1 {
     color: #ff006e;
