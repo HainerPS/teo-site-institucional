@@ -60,6 +60,19 @@
     color: #ff006e;
     border-bottom: 2px solid #ff006e;
   }
+
+  .menu .menu-contact {
+    background: #ff006e;
+    color: #fff;
+    padding: 10px 18px;
+    border-bottom: none;
+  }
+  
+  .menu .menu-contact:hover {
+    background: #d9005d;
+    color: #fff;
+    border-bottom: none;
+  }
   
   .hero {
     min-height: 78vh;
@@ -390,6 +403,21 @@
     opacity: 0.7;
     cursor: not-allowed;
   }
+
+  .whatsapp-btn {
+    display: inline-block;
+    margin-top: 28px;
+    background: #25d366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 15px 24px;
+    border-radius: 0;
+  }
+  
+  .whatsapp-btn:hover {
+    opacity: 0.9;
+  }
   
   .form-message {
     font-weight: 700;
@@ -434,9 +462,15 @@
     line-height: 1.6;
   }
   
-  .project-detail {
-    padding: 90px 14%;
-    border-bottom: 1px solid #eee;
+  .project-detail:last-of-type {
+    border-bottom: none;
+  }
+
+  .cta {
+    padding: 100px 14%;
+    background: #ff006e;
+    color: #fff;
+    margin-top: 40px;
   }
   
   .project-title {
