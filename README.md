@@ -16,13 +16,13 @@ Projeto completo desenvolvido para a empresa **Téo Comunicação**, com foco em
 
 ### 🖥️ Página Inicial
 
-![Home](frontend/assets/landing.png)
+![Home](frontend/assets/imagens/landing.png)
 
 ---
 
 ### 📊 Painel Administrativo
 
-![Admin](frontend/assets/admin.png)
+![Admin](frontend/assets/imagens/admin.png)
 
 ---
 
