@@ -642,3 +642,40 @@
       height: 240px;
     }
   }
+
+  /* CLIENTES */
+
+.clientes {
+  padding: 100px 14%;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.clientes h2 {
+  font-size: 36px;
+  margin: 20px 0 40px;
+  color: #111;
+}
+
+.clientes-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clientes-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .clientes {
+    padding: 60px 20px;
+  }
+
+  .clientes h2 {
+    font-size: 26px;
+  }
+}
