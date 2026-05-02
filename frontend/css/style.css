@@ -479,6 +479,11 @@
     color: #555;
     line-height: 1.6;
   }
+
+  .project-detail {
+    padding: 110px 0;
+    border-bottom: 1px solid #eee;
+  }
   
   .project-detail:last-of-type {
     border-bottom: none;
